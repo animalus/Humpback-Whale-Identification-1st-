@@ -2,7 +2,11 @@ import datetime
 import os
 
 from timeit import default_timer as timer
-from dataSet import *
+from dataSet import (
+    random_erase, random_shift, random_scale, do_gaussian_noise,
+    do_speckle_noise, random_angle_rotate, do_brightness_shift,
+    do_brightness_multiply, do_gamma, do_clahe
+)
 from models import *
 import torch
 import time
@@ -292,7 +296,7 @@ def train(freeze=False, fold_index=1, model_name='seresnext50',min_num_class=10,
                     time_to_str((timer() - start) / 60), checkPoint_start, i)
                 , end='', flush=True)
             i += 1
-           
+
         pass
 
 

@@ -7,6 +7,8 @@ from models import *
 from dataSet import WhaleTestDataset
 import os
 import shutil
+from torch.utils.data import DataLoader
+
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 num_TTA = 2
 

@@ -16,7 +16,6 @@ pip install opencv-python
 - pandas
 - tqdm
 - opencv-python
-- matplotlib
 
 ## Solution
 

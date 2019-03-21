@@ -4,11 +4,11 @@ from tqdm import tqdm
 import os
 import numpy as np
 import pandas as pd
-import math
 import cv2
-import matplotlib.pyplot as plt
-from torch.utils.data import DataLoader
+
 BASE_SIZE = 256
+
+
 def do_length_decode(rle, H=192, W=384, fill_value=255):
     mask = np.zeros((H,W), np.uint8)
     if type(rle).__name__ == 'float': return mask
@@ -206,7 +206,3 @@ class WhaleTestDataset(Dataset):
             label = self.labels_dict[self.labels[index]]
             image = self.get_image(name, self.transform)
             return image, label, name
-
-
-
-
