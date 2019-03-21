@@ -6,9 +6,17 @@
 
 #### Dependencies
 
--   python==3.6
--   torch==0.4.1
--   torchvision==0.2.1
+```
+pip install opencv-python
+```
+
+- python==3.6
+- torch==0.4.1
+- torchvision==0.2.1
+- pandas
+- tqdm
+- opencv-python
+- matplotlib
 
 ## Solution
 
@@ -20,6 +28,13 @@ https://www.kaggle.com/c/humpback-whale-identification/discussion/82366
 
 trainset -> ./input/train  
 testset -> ./input/test
+
+I made links.
+
+```
+ln -s /data/kaggle/comp/train train
+ln -s /data/kaggle/comp/test test
+```
 
 ## mask
 
