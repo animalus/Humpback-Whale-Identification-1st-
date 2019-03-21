@@ -75,3 +75,8 @@ step 3.
 
 line 99 in test.py  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; checkPoint_start = best checkPoint of step 3
+
+## Questions
+
+- Did you manually create the bboxes? (See inputs/bboxs.csv)
+- 
