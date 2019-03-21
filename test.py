@@ -4,7 +4,7 @@ import os
 import torch
 from tqdm import tqdm
 from models import *
-from dataSet import *
+from dataSet import WhaleTestDataset
 import os
 import shutil
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
@@ -99,4 +99,3 @@ if __name__ == '__main__':
     fold_index = 1
     model_name = 'senet154'
     test(checkPoint_start, fold_index, model_name)
-

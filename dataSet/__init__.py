@@ -1,2 +1,2 @@
-from .reader.py import *
-from .transform.py import *
+from .reader import WhaleDataset, WhaleTestDataset
+from .transform import *
